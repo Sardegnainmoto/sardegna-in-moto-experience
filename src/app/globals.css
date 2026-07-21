@@ -27,6 +27,7 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 
 ::selection { background: var(--color-dune); color: var(--color-ink); }

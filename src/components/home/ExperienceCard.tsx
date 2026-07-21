@@ -24,6 +24,6 @@ export function ExperienceCard({ title, description, status, image, href, priori
     </>
   );
 
-  const className = "group relative isolate block min-h-[470px] overflow-hidden bg-ink shadow-[0_1px_0_rgba(17,18,15,.1)] transition duration-500 sm:min-h-[560px] hover:shadow-[0_18px_45px_rgba(17,18,15,.16)]";
+  const className = "group relative isolate block min-h-[420px] overflow-hidden bg-ink shadow-[0_1px_0_rgba(17,18,15,.1)] transition duration-500 sm:min-h-[560px] hover:shadow-[0_18px_45px_rgba(17,18,15,.16)]";
   return href ? <a className={className} href={href}>{content}</a> : <div className={`${className} grayscale-[0.3]`} aria-label={`${title}, coming soon`}>{content}</div>;
 }
