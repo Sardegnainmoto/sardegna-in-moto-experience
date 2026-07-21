@@ -5,8 +5,8 @@ import { Container } from "@/components/ui/Container";
 
 const navigation = [
   { label: "Esperienze", href: "#esperienze" },
-  { label: "Chi siamo", href: "#" },
-  { label: "Contatti", href: "#" },
+  { label: "Chi siamo", href: "/esperienze/tunisia-desert-experience#chi-sono" },
+  { label: "Contatti", href: "/esperienze/tunisia-desert-experience#contatti" },
 ];
 
 export function SiteHeader() {
