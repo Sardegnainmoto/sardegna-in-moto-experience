@@ -14,15 +14,15 @@ const experiences = [
 export function HomePage() {
   return (
     <main>
-      <section className="relative isolate min-h-[100svh] overflow-hidden bg-ink text-white sm:min-h-[780px]">
+      <section className="relative isolate min-h-[100svh] min-h-[100dvh] overflow-hidden bg-ink text-white sm:min-h-[780px]">
         <Image src="/images/hero-desert-raid.png" alt="Moto adventure tra le dune del deserto" fill priority sizes="100vw" className="object-cover object-[58%_center]" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(12,13,11,.86)_0%,rgba(12,13,11,.58)_47%,rgba(12,13,11,.18)_100%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(12,13,11,.45)_0%,transparent_34%)]" />
         <SiteHeader />
-        <Container className="relative z-10 flex min-h-[100svh] items-end pb-[max(2rem,env(safe-area-inset-bottom))] pt-28 sm:min-h-[780px] sm:pb-20 lg:pb-24">
+        <Container className="relative z-10 flex min-h-[100svh] min-h-[100dvh] items-end pb-[max(2rem,var(--safe-bottom))] pt-[max(7rem,calc(var(--safe-top)+5rem))] sm:min-h-[780px] sm:pb-20 lg:pb-24">
           <div className="max-w-3xl">
             <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.2em] text-dune sm:mb-6 sm:tracking-[0.24em] sm:text-xs">Motorcycle adventure experiences</p>
-            <h1 className="font-display text-[clamp(2.4rem,11vw,7.8rem)] leading-[0.88] tracking-[-0.06em] sm:leading-[0.86] sm:tracking-[-0.065em]">Un viaggio non è una vacanza.</h1>
+            <h1 className="font-display text-[clamp(2.4rem,10vw,7.8rem)] leading-[0.88] tracking-[-0.06em] sm:leading-[0.86] sm:tracking-[-0.065em]">Un viaggio non è una vacanza.</h1>
             <p className="mt-5 max-w-xl text-[clamp(1rem,2.5vw,1.125rem)] leading-7 text-white/88 sm:mt-7">È qualcosa che ti cambia.</p>
             <a href="#esperienze" className="mt-7 inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-full bg-white px-6 py-4 text-xs font-bold uppercase tracking-[0.15em] text-ink shadow-[0_12px_35px_rgba(0,0,0,.22)] transition duration-300 hover:-translate-y-0.5 hover:bg-dune hover:shadow-[0_16px_38px_rgba(0,0,0,.3)] sm:mt-9 sm:w-auto">Scopri i raid <ArrowIcon className="size-4" /></a>
           </div>

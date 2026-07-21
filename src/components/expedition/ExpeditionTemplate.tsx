@@ -32,15 +32,15 @@ function ContactIcon({ type }: { type: "mail" | "phone" | "message" }) {
 export function ExpeditionTemplate({ expedition }: ExpeditionTemplateProps) {
   const quickFacts = [expedition.date, expedition.duration, expedition.ridingDays, expedition.distance, expedition.groupSize, expedition.level];
   return <main>
-    <section className="relative isolate min-h-[100svh] overflow-hidden bg-ink text-white sm:min-h-[900px]">
+    <section className="relative isolate min-h-[100svh] min-h-[100dvh] overflow-hidden bg-ink text-white sm:min-h-[900px]">
       <Image src={expedition.heroImage} alt={expedition.heroAlt} fill priority sizes="100vw" className="object-cover object-[58%_center] sm:object-center" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(12,13,11,.88)_0%,rgba(12,13,11,.6)_47%,rgba(12,13,11,.26)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(12,13,11,.72)_0%,transparent_52%)]" />
       <SiteHeader />
-      <Container className="relative z-10 flex min-h-[100svh] items-end pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-24 sm:min-h-[900px] sm:pb-20 sm:pt-36">
+      <Container className="relative z-10 flex min-h-[100svh] min-h-[100dvh] items-end pb-[max(1.5rem,var(--safe-bottom))] pt-[max(6rem,calc(var(--safe-top)+5rem))] sm:min-h-[900px] sm:pb-20 sm:pt-36">
         <div className="max-w-4xl">
           <p className="mb-4 text-[10px] font-bold uppercase tracking-[.18em] text-dune sm:mb-6 sm:tracking-[.24em]">{expedition.eyebrow}</p>
-          <h1 className="font-display text-[clamp(2.4rem,11vw,9rem)] leading-[.84] tracking-[-.065em] sm:leading-[.8] sm:tracking-[-.075em]">Un viaggio<br />non è una vacanza.</h1>
+          <h1 className="font-display text-[clamp(2.4rem,10vw,9rem)] leading-[.84] tracking-[-.065em] sm:leading-[.8] sm:tracking-[-.075em]">Un viaggio<br />non è una vacanza.</h1>
           <p className="mt-5 text-xs font-bold uppercase tracking-[.16em] text-dune sm:mt-7 sm:tracking-[.2em]">{expedition.name}</p>
           <p className="mt-4 max-w-2xl text-[clamp(.95rem,2.5vw,1.125rem)] leading-6 text-white/88 sm:mt-5 sm:leading-7">{expedition.description}</p>
           <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 border-y border-white/20 py-4 text-[10px] font-semibold uppercase leading-5 tracking-[.08em] text-white/84 sm:mt-8 sm:gap-x-5 sm:py-5 sm:text-xs sm:tracking-[.1em]">{quickFacts.map((fact) => <span key={fact} className="min-w-0">{fact}</span>)}</div>
