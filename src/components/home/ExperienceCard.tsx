@@ -11,9 +11,11 @@ type ExperienceCardProps = {
 };
 
 export function ExperienceCard({ title, description, status, image, href, priority = false }: ExperienceCardProps) {
+  const useDirectImage = image.startsWith("/images/morocco/");
+
   const content = (
     <>
-      <Image src={image} alt="" fill priority={priority} sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-700 ease-out group-hover:scale-[1.045]" />
+      <Image src={image} alt="" fill priority={priority} unoptimized={useDirectImage} sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-700 ease-out group-hover:scale-[1.045]" />
       <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/30 to-ink/5 transition duration-500 group-hover:from-ink/90" />
       <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-7">
         <span className="mb-5 inline-flex rounded-full border border-white/35 bg-ink/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] backdrop-blur-sm">{status}</span>
