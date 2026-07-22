@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Container } from "@/components/ui/Container";
 
 const navigation = [
-  { label: "Esperienze", href: "#esperienze" },
+  { label: "Esperienze", href: "/#esperienze" },
   { label: "Chi siamo", href: "/esperienze/tunisia-desert-experience#chi-sono" },
   { label: "Contatti", href: "/esperienze/tunisia-desert-experience#contatti" },
 ];
@@ -37,7 +37,7 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.14em] lg:flex" aria-label="Navigazione principale">
           {navigation.map((item) => <a key={item.label} className="transition duration-300 hover:text-dune" href={item.href}>{item.label}</a>)}
-          <a href="#esperienze" className="rounded-full bg-white px-5 py-3 text-ink transition duration-300 hover:-translate-y-0.5 hover:bg-dune">Scopri i raid</a>
+          <a href="/#esperienze" className="rounded-full bg-white px-5 py-3 text-ink transition duration-300 hover:-translate-y-0.5 hover:bg-dune">Scopri i raid</a>
         </nav>
 
         <button className="flex size-11 flex-col items-center justify-center gap-1.5 lg:hidden" type="button" aria-label={isOpen ? "Chiudi il menu" : "Apri il menu"} aria-expanded={isOpen} onClick={() => setIsOpen(!isOpen)}>
@@ -50,7 +50,7 @@ export function SiteHeader() {
         <div className="min-h-[calc(100svh-4rem-var(--safe-top))] min-h-[calc(100dvh-4rem-var(--safe-top))] border-b border-white/20 bg-ink/95 pl-[max(1.25rem,var(--safe-left))] pr-[max(1.25rem,var(--safe-right))] py-8 backdrop-blur-xl lg:hidden">
           <nav className="flex flex-col gap-2 text-base font-semibold uppercase tracking-[0.12em]" aria-label="Navigazione mobile">
             {navigation.map((item) => <a key={item.label} href={item.href} onClick={() => setIsOpen(false)} className="py-4">{item.label}</a>)}
-            <a href="#esperienze" onClick={() => setIsOpen(false)} className="mt-4 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-white px-5 py-3 text-xs text-ink">Scopri i raid</a>
+            <a href="/#esperienze" onClick={() => setIsOpen(false)} className="mt-4 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-white px-5 py-3 text-xs text-ink">Scopri i raid</a>
           </nav>
         </div>
       )}
