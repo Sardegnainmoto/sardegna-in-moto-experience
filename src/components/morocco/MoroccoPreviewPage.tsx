@@ -11,7 +11,7 @@ const gallery = [
 export function MoroccoPreviewPage() {
   return <main>
     <section className="relative isolate min-h-[100svh] min-h-[100dvh] overflow-hidden bg-ink text-white sm:min-h-[850px]">
-      <Image src="/images/morocco/IMG_7099.jpg" alt="Motociclista tra le dune del Marocco" fill priority sizes="100vw" className="object-cover object-[60%_center]" />
+      <Image src="/images/morocco/IMG_7698.jpg" alt="Viaggiatori nel deserto del Marocco" fill priority unoptimized sizes="100vw" className="object-cover object-[60%_center]" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(12,13,11,.88)_0%,rgba(12,13,11,.52)_56%,rgba(12,13,11,.22)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(12,13,11,.7)_0%,transparent_50%)]" />
       <SiteHeader />

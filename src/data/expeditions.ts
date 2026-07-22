@@ -33,8 +33,8 @@ export const tunisiaExpedition: Expedition = {
   eyebrow: "Sahara tunisino · 20–25 Marzo 2027",
   description:
     "Quattro giorni di guida attraverso piste, dune e paesaggi spettacolari del Sahara tunisino. Un’esperienza progettata per chi vuole vivere il deserto, non semplicemente attraversarlo.",
-  heroImage: "/images/tunisia/hero-sahara-raid.jpg",
-  heroAlt: "Motociclisti davanti alle grandi dune del Sahara tunisino",
+  heroImage: "/images/tunisia/tunisia-cover-campo-dune.png",
+  heroAlt: "Campo tendato ai piedi delle grandi dune del Sahara tunisino",
   date: "20–25 Marzo 2027",
   duration: "6 giorni",
   ridingDays: "4 giorni di guida",
