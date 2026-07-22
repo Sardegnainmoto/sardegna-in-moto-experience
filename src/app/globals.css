@@ -42,6 +42,12 @@ body {
 
 img, picture, svg, video { max-width: 100%; }
 
+/* Content must remain readable before hydration and if an in-view animation fails. */
+[data-motion-element] {
+  opacity: 1;
+  transform: none;
+}
+
 ::selection { background: var(--color-dune); color: var(--color-ink); }
 
 :focus-visible {
@@ -55,5 +61,20 @@ img, picture, svg, video { max-width: 100%; }
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+
+  [data-motion-element] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Safari iOS can occasionally skip an IntersectionObserver/Framer Motion in-view update. */
+@supports (-webkit-touch-callout: none) {
+  @media (hover: none) and (pointer: coarse) {
+    [data-motion-element] {
+      opacity: 1 !important;
+      transform: none !important;
+    }
   }
 }

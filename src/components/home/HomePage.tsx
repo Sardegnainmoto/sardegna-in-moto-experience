@@ -8,7 +8,7 @@ import { Container } from "@/components/ui/Container";
 const experiences = [
   { title: "Tunisia", description: "Piste remote, dune e il Sahara davanti a te.", status: "Disponibile" as const, image: "/images/hero-desert-raid.png", href: "/esperienze/tunisia-desert-experience" },
   { title: "Sardegna", description: "Curve, sterrati e l'energia selvaggia dell'isola.", status: "Coming soon" as const, image: "/images/sardegna-coastal-trail.png" },
-  { title: "Marocco", description: "Atlante, kasbah e piste che sfiorano l'orizzonte.", status: "Coming soon" as const, image: "/images/marocco-dune-raid.jpg" },
+  { title: "Marocco", description: "Atlante, kasbah e piste che sfiorano l'orizzonte.", status: "Coming soon" as const, image: "/images/marocco/IMG_7099.jpg", href: "/esperienze/marocco" },
 ];
 
 export function HomePage() {
